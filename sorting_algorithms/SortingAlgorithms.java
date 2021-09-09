@@ -14,22 +14,21 @@ public class SortingAlgorithms{
         //Time Complexity: O(n^2).
 
         BubbleSort b = new BubbleSort();
-        int arrayB[] = b.bubbleSort(arr);
-
+        System.out.println("\nThe sorted array with BubbleSort is:");
+        printArray(b.bubbleSort(arr.clone()));
+        
         SelectionSort s = new SelectionSort();
-        int arrayS[] = s.selection(arr);  
+        System.out.println("\nThe sorted array with SelectionSort is:");
+        printArray(s.selection(arr.clone()));
 
         InsertionSort i = new InsertionSort();
-        int arrayI[] = i.insertion(arr);
-
-        System.out.println("\nThe sorted array with BubbleSort is:");
-        printArray(arrayB);
-
-        System.out.println("\nThe sorted array with SelectionSort is:");
-        printArray(arrayS);
-
         System.out.println("\nThe sorted array with InsertionSort is:");
-        printArray(arrayI);
+        printArray(i.insertion(arr.clone()));
 
+        //Time Complexity: O(n log n)
+
+        MergeSort m = new MergeSort();
+        System.out.println("\nThe sorted array with MergeSort is:");
+		printArray(m.mSort(arr.clone()));
     }
 }
