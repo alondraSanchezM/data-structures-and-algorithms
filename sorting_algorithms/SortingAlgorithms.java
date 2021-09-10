@@ -25,10 +25,19 @@ public class SortingAlgorithms{
         System.out.println("\nThe sorted array with InsertionSort is:");
         printArray(i.insertion(arr.clone()));
 
-        //Time Complexity: O(n log n)
+        //T.C. Worst case: O(n^2)  |  Average case: O(n log n)
+        QuickSort q = new QuickSort();
+        System.out.println("\nThe sorted array with QuickSort is:");
+		printArray(q.qSort(arr.clone()));
 
+        //Time Complexity: O(n log n)
         MergeSort m = new MergeSort();
         System.out.println("\nThe sorted array with MergeSort is:");
 		printArray(m.mSort(arr.clone()));
+
+        //Time Complexity: O(n)
+        CountingSort c = new CountingSort();
+        System.out.println("\nThe sorted array with CountingSort is:");
+		printArray(c.countingSort(arr.clone()));
     }
 }
