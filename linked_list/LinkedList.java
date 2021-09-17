@@ -1,7 +1,7 @@
 public class LinkedList{
     private Node head;
 
-    //Insert a new Node at the head is 0(n)
+    //Insert a new Node at the head is 0(1)
     public void insertAtHead(int data){
         Node newNode = new Node(data);
         newNode.setNextNode(this.head);
@@ -20,12 +20,12 @@ public class LinkedList{
         return length;
     }
 
-    //Deleting the head node
+    //Deleting the head node T.C. O(1)
     public void deleteFromHead(){
         this.head = this.head.getNextNode();
     }
 
-    //Searching an item 
+    //Searching an item  O(n)
     public Node find(int data){
         Node current = this.head;
 

@@ -27,5 +27,3 @@ class Node{
         return "Data: " + this.data;
     }
 }
-
-//https://practice.geeksforgeeks.org/explore/?company%5B%5D=Oracle&company%5B%5D=IBM&company%5B%5D=Intel&page=1&company%5B%5D=Oracle&company%5B%5D=IBM&company%5B%5D=Intel

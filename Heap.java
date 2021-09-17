@@ -9,6 +9,7 @@ public class Heap{
 		this.heapData = new Integer[size];
 	}
 	
+	//Time Complexity O(log n)
 	public void insert(int item) {
 		if (isFull()) 
 			throw new RuntimeException("Heap is full");
@@ -16,6 +17,7 @@ public class Heap{
 		fixUp(currentPosition);
 	}
 	
+	//Time Complexity O(log n)
 	public int deleteRoot() {
 		int result = heapData[0];
 		heapData[0] = heapData[currentPosition--];
@@ -64,7 +66,7 @@ public class Heap{
 		return currentPosition == heapData.length-1;
 	}
 	
-	//Time COmplexity O(n log n)
+	//Time Complexity O(n log n)
 	public void heapSort() {
 		for (int i=0; i < currentPosition; i++) {
 			int tmp = heapData[0]; // max element

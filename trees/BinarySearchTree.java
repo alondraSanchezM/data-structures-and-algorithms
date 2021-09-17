@@ -120,6 +120,7 @@ public class BinarySearchTree{
 
     public static void main(String[] args) {
 		int[] sample = {234,23,67,3,26,86,45,77,1,4};
+		//Time Complexity: O(log n).
 		BinarySearchTree bst = new BinarySearchTree();
 
 		for (int x : sample) 

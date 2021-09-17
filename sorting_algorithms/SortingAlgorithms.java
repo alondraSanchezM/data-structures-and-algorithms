@@ -12,15 +12,16 @@ public class SortingAlgorithms{
         printArray(arr);
 
         //Time Complexity: O(n^2).
-
         BubbleSort b = new BubbleSort();
         System.out.println("\nThe sorted array with BubbleSort is:");
         printArray(b.bubbleSort(arr.clone()));
         
+        //Time Complexity: O(n^2).
         SelectionSort s = new SelectionSort();
         System.out.println("\nThe sorted array with SelectionSort is:");
         printArray(s.selection(arr.clone()));
 
+        //Time Complexity: O(n^2).
         InsertionSort i = new InsertionSort();
         System.out.println("\nThe sorted array with InsertionSort is:");
         printArray(i.insertion(arr.clone()));

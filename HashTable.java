@@ -63,6 +63,8 @@ public class HashTable {
 	}
 	
 	public static void main(String[] args) {
+		//Time Complexity O(1) || Worst case: O(n)
+
 		HashTable ht = new HashTable();
 		ht.put("4", 40);
 		ht.put("6", 60);

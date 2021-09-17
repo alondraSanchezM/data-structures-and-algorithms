@@ -11,8 +11,7 @@ public class TowerOfHanoi{
         }
     }
 
-
     public static void main(String[] args) {
-        System.out.println(move(3,'A','B','C'));
+        move(5,'A','B','C'); // T.C.: O(2^n).
     }
 }
